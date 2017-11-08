@@ -1,0 +1,2 @@
+class PtoUser < ApplicationRecord
+end
