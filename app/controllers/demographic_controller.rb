@@ -1,0 +1,2 @@
+class DemographicController < ApplicationController
+end
