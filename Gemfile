@@ -5,6 +5,21 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'figaro'
+gem 'faker'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'bootstrap'
+gem 'clearance'
+gem 'jquery-turbolinks'
+gem 'multi-dates-picker-rails' 
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'sdoc'  
+gem 'jquery-rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'autoprefixer-rails'
+gem 'braintree'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

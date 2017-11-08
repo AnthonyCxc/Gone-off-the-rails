@@ -1,2 +1,0 @@
-class ProjectCauseController < ApplicationController
-end

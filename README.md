@@ -6,7 +6,17 @@ Add the gems that you include here.
 -gem 'omni-auth'
 -gem 'omni-auth google'
 -gem 'omni-auth facebook'
--gem ''
+-gem 'bootstrap'
+-gem 'clearance'
+-gem 'jquery-turbolinks'
+-gem 'multi-dates-picker-rails' 
+-gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+-gem 'sdoc'  
+-gem 'jquery-rails'
+-gem 'sprockets-rails', :require => 'sprockets/railtie'
+-gem 'autoprefixer-rails'
+-gem 'braintree'
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

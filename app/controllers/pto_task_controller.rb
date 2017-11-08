@@ -1,2 +1,0 @@
-class PtoTaskController < ApplicationController
-end

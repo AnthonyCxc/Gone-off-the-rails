@@ -1,0 +1,2 @@
+class PtoUsersController < ApplicationController
+end
