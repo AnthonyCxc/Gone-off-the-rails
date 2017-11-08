@@ -8,7 +8,9 @@ class CreateProjectCauses < ActiveRecord::Migration[5.1]
     	t.integer :pto_id, index: true, foreign_key: true #project task owner id
     	t.integer :admin_id, index: true, foreign_key: true #admin owner id
     	t.integer :fsp_id, index: true, foreign_key: true #financial service provider
-    	t.integer :location_id, index: true, foreign_key: true
+      t.string :country
+      t.string :state_or_province
+      t.string :address
 
       t.timestamps
     end

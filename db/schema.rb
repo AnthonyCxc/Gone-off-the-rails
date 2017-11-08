@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171108073105) do
+ActiveRecord::Schema.define(version: 20171108073048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,14 +23,6 @@ ActiveRecord::Schema.define(version: 20171108073105) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "demographics", force: :cascade do |t|
-    t.string "country"
-    t.string "state_or_province"
-    t.string "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "project_causes", force: :cascade do |t|
     t.string "project_title"
     t.string "project_description"
@@ -39,12 +31,13 @@ ActiveRecord::Schema.define(version: 20171108073105) do
     t.integer "pto_id"
     t.integer "admin_id"
     t.integer "fsp_id"
-    t.integer "location_id"
+    t.string "country"
+    t.string "state_or_province"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["admin_id"], name: "index_project_causes_on_admin_id"
     t.index ["fsp_id"], name: "index_project_causes_on_fsp_id"
-    t.index ["location_id"], name: "index_project_causes_on_location_id"
     t.index ["pto_id"], name: "index_project_causes_on_pto_id"
   end
 
