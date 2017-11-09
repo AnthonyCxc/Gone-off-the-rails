@@ -7,6 +7,9 @@ Add the gems that you include here.
 -gem 'omni-auth google'
 -gem 'omni-auth facebook'
 -gem ''
+-gem 'cancancan', '~> 2.0'
+-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+-gem 'devise', '~> 4.3'
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
