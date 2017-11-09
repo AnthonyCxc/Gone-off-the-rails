@@ -10,13 +10,14 @@ class UsersController < ApplicationController
   end
 
   def create
+    byebug
   	@user = User.new(user_params)
   	if @user.save
       log_in @user
   		flash[:success] = "Welcome to Pay it forward!"
-  		redirect_to @user
+  		redirect_to users_path
   	else
-  		render 'show'
+  		render 'new'
   	end
   end
 
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
 
   private
   	def user_params
-  		params.require(:user).permit()
+  		params.require(:user).permit(:name, :email, :password, :password_confirmation)
       # :profile_photo
   	end
 end
