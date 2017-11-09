@@ -18,7 +18,7 @@ class UserVotesController < ApplicationController
 	def update
 		respond_to do |format|
 			if @vote.update(vote_update_params)
-				format.html { redirect_to @vote, notice: "Your vote updated or was expedited" }
+				format.html { redirect_to @vote, notice: "Your vote was expedited" }
 				format.json { head :no_content }
 			else
 				format.html { render action: 'edit' }
