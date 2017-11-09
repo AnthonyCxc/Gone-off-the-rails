@@ -1,2 +1,3 @@
 class ProjectCause < ApplicationRecord
+
 end

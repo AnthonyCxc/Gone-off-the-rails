@@ -1,5 +1,5 @@
 <h1>Project in funding phases</h1>
 <% @listings.each do |x| %>
-	<h2><%= link_to x.project_title %></h2>
+	<h2><%= link_to x.project_title, listing_path(x.id)  %></h2>
 	<p>Donation goal: <%= x.donation_goal %></p>
 <%end%>

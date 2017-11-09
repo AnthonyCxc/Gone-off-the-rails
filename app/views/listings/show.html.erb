@@ -1,0 +1,25 @@
+<div class = "box"><h1><%= @listing.project_title %></h1>
+Funds needed:<%= @listing.donation_goal %>
+<!-- current amount of donation recieved -->
+<p><%= @listing.project_description %></p>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<button onclick = "move()">donate</button>
+</div>
+
+<script type="text/javascript">
+	function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+</script>
