@@ -1,4 +1,4 @@
-function move() {
+$(document).ready(function move() {
     var elem = document.getElementById("myBar"); 
     var width = 1;
     var id = setInterval(frame, 10);
@@ -10,4 +10,4 @@ function move() {
             elem.style.width = width + '%'; 
         }
     }
-}
+})
