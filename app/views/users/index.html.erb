@@ -1,1 +1,13 @@
-<h1>Welcome to Pay it forward </h1>
+<h1>Welcome to Ripply </h1>
+
+<% if !current_user.nil? %>
+		<%= link_to "Causes", project_causes_path %><br>
+		<%= link_to "My Causes" %><br>
+		<%= link_to "Volunteer" %><br>
+		<%= link_to "Karma Points" %><br>
+	<hr>
+	<p> Have a social pain, that you want solved? </p>
+		<%= link_to "Become a Project Task Owner" %> 
+	<p> Lets work together to try resolve it </p>
+	<%# session.inspect %>
+<% end %>
