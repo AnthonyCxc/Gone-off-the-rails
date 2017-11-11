@@ -1,0 +1,18 @@
+<h5>it does print just put some data in your database</h5>
+<%= @project_causes.each do |p| %>
+	<h5><%= link_to p.project_title %></h5><%# link_to "Read More", %>
+	<p></p>
+<% end %>
+
+
+<%# form_for @project_causes, url: { action: "create" } do |f| %>
+	Project Title: <%# f.text_field :project_title %><br />
+	Project Description: <%# f.text_field :project_description %><br />
+	Project Status: <%# f.text_field :project_status %><br />
+	Project Donation Goal: <%# f.text_field :donation_goal %><br />
+	Project Country: <%# f.text_field :country %><br />
+	Project State: <%# f.text_field :state_or_province %><br />
+	Project Address: <%# f.text_field :address %><br />
+	<%= link_to "Donate" %>
+	<%# f.submit %>
+<%# end %>
