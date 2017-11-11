@@ -1,4 +1,4 @@
-class PtoTaskController < ApplicationController
+class PtoTasksController < ApplicationController
 	before_action :authenticate_user!, :except [:new]
 	
 	def new
@@ -36,4 +36,5 @@ class PtoTaskController < ApplicationController
 				:task_owner_approval_status,:task_admin_approval_status,
 				:task_owner_id,:admin_owner_id)
 		end
+
 end

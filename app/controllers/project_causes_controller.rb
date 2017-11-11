@@ -16,4 +16,5 @@ class ProjectCausesController < ApplicationController
 			params.require(:project_cause).permit(:project_title, :project_description,:donation_goal, 
 				:project_status, :pto_id, :admin_id, :country, :state_or_province, :address)
 		end
+
 end
